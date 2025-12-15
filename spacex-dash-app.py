@@ -113,6 +113,9 @@ def get_scatter_chart(entered_site,payload_range):
             title=f'Correlation between Payload and Success for site {entered_site}'
         )
         return fig
+
+spacex_df['Launch Site'].unique()
+
 # Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)
